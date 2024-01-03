@@ -9,7 +9,7 @@ class Solution:
         for i in range(n):
             mp[S[i]] += 1
             if len(mp) == 3:
-                while start < i and mp[S[start]] > 1:  # Fix: change st to start
+                while start < i and mp[S[start]] > 1:  
                     mp[S[start]] -= 1
                     start += 1
                 ans = min(ans, i - start + 1)
